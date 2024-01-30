@@ -1,0 +1,292 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heroBannerTitle {
+  color: #17313b;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  max-width: 100%;
+  padding: 10px 20px;
+  font-family: arial;
+}
+
+.heroBannerDescription {
+  color: #4a5255;
+  font-size: 1rem;
+  line-height: 27px;
+  padding: 0px 20px;
+}
+
+#root .subServicename {
+  color: #1b7499;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  padding-left: 35px;
+}
+
+.cardContainer {
+  border-radius: 8px !important;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.cardServiceName {
+  font-size: 24px !important;
+  line-height: 32px !important;
+  align-items: center;
+  color: #222;
+  display: flex;
+  font-weight: 700 !important;
+  justify-content: flex-start;
+  letter-spacing: 0.2px;
+  margin: 0;
+  position: relative;
+  word-break: break-word;
+}
+
+.cardServiceName span {
+  margin-left: 12px;
+}
+
+.signInHeader {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 4px;
+  color: #17313b;
+}
+
+.signInDescription {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.loginWithBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 100%;
+}
+
+.alternativeLogin {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  color: #3e839e;
+  cursor: pointer;
+}
+
+.serviceProviderName {
+  line-height: 33px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #6a797d;
+  margin-block-end: 0px !important;
+  margin-block-start: 10px !important;
+}
+
+.serviceProviderName span {
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.serviceProviderRating {
+  margin-block-start: 0px !important;
+  color: #17313b;
+  font-size: 20px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.serviceProviderRating span {
+  color: red;
+  font-size: 15px;
+}
+
+.serviceProviderreview {
+  color: #6a797d;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.serviceProviderreviewBy {
+  color: #6a797d;
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.serviceProviderFocus {
+  color: #17313b;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.serviceProviderFocusName {
+  color: #1b85ce;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.search-bg {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.search-bg a,
+.MuiTypography-h2 {
+  color: "#000";
+}
+
+.autoCompleteHero {
+  width: 300px;
+  margin-right: 30px;
+  color: #000;
+}
+
+.sendMessageCompanyName {
+  line-height: 33px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #6a797d;
+  margin-block-end: 0px !important;
+  margin-block-start: 10px !important;
+}
+
+.sendMessageRating {
+  margin-block-start: 0px !important;
+  color: #17313b;
+  font-size: 15px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.sendMessageRating span {
+  color: red;
+  font-size: 15px;
+}
+
+.sendMessageSubject {
+  align-items: baseline;
+  color: #16313a;
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: 24px;
+  padding: 0 0 0;
+  margin-bottom: 8px;
+}
+
+.search-bg::before {
+  content: "";
+  background-image: url("http://localhost:3000/images/home-search-bg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.45;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.websiteBox {
+  border-left: 1px solid #eee;
+}
+
+.borderBoxButton {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.menuAppbarMobile ul {
+  padding: 0;
+}
+
+.menuAppbarMobile .MuiPaper-root {
+  right: 0;
+}
+
+.menuAppbarDesktop ul {
+  padding: 0;
+}
+.menuAppbarDesktop ul li button {
+  margin: 5px;
+}
+
+.from-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #000;
+  padding: 24px;
+  width: 400px,  
+}
+@media (max-width: 768px){
+  .from-container{
+    width: 320px
+  }
+}
